@@ -1,7 +1,7 @@
 import requests  # Import the requests library to handle HTTP requests
 import json
 def emotion_detector(text_to_analyse): 
-     """Call Watson NLP EmotionPredict API on input text.
+    """Call Watson NLP EmotionPredict API on input text.
 
     Args:
         text_to_analyse (str): The input text to analyze.
