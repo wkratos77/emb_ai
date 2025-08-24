@@ -1,5 +1,12 @@
 # Emotion Detection Web Application
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![Python](https://img.shields.io/badge/Python-3.12%2B-blue)
+![Flask](https://img.shields.io/badge/Flask-2.0%2B-green)
+![Watson NLP](https://img.shields.io/badge/Watson%20NLP-EmD-red)
+[![Pylint](https://img.shields.io/badge/pylint-10%2F10-brightgreen)]()
+[![Tests](https://img.shields.io/badge/tests-passing-success)]()
+
 Final Project for **AI-Based Web Application Development and Deployment** (Embeddable Watson AI).
 This app integrates the **Watson NLP EmotionPredict API** to analyze text and return five emotions
 (**anger, disgust, fear, joy, sadness**) plus the **dominant emotion**. Built with **Flask**.
