@@ -1,11 +1,11 @@
 # Emotion Detection Web Application
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/Licenses/Apache-2.0)
 ![Python](https://img.shields.io/badge/Python-3.12%2B-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.0%2B-green)
 ![Watson NLP](https://img.shields.io/badge/Watson%20NLP-EmD-red)
-[![Pylint](https://img.shields.io/badge/pylint-10%2F10-brightgreen)]()
-[![Tests](https://img.shields.io/badge/tests-passing-success)]()
+[![Pylint](https://img.shields.io/badge/Pylint-10%2F10-brightgreen)]()
+[![Tests](https://img.shields.io/badge/Tests-passing-success)]()
 
 Final Project for **AI-Based Web Application Development and Deployment** (Embeddable Watson AI).
 This app integrates the **Watson NLP EmotionPredict API** to analyze text and return five emotions
@@ -23,42 +23,47 @@ This app integrates the **Watson NLP EmotionPredict API** to analyze text and re
 ---
 
 ## 📦 Project Structure
-emd-ai/
-├─ EmotionDetection/   
-│ └─ emotion_detection.py # Core Watson API integration + error handling     
-│ └─ __init__.py # Core Watson API integration + error handling    
-├─ templates/     
-│ └─ index.html # Provided UI (no edits required)      
-├─ static/     
-│ └─ mywebscript.js # Provided JS (no edits required)     
-├─ server.py # Flask app (routes: / and /emotionDetector)    
-├─ test/    
-│ └─ test_emotion_detection.py # Unit tests   
-└─ README.md    
+
+```text
+  emd-ai/
+  ├─ EmotionDetection/   
+  │ └─ emotion_detection.py          # Core Watson API integration + error handling     
+  │ └─ __init__.py                   # Core Watson API integration + error handling    
+  ├─ templates/     
+  │ └─ index.html                    # Provided UI (no edits required)      
+  ├─ static/     
+  │ └─ mywebscript.js                # Provided JS (no edits required)     
+  ├─ server.py                       # Flask app (routes: / and /emotionDetector)    
+  ├─ test/    
+  │ └─ test_emotion_detection.py     # Unit tests   
+  └─ README.md    
+```
 
 ---
 
 ## 🚀 Run
 
-```bash```
+```bash
 python3 server.py
+```
 
+- App runs on http://127.0.0.1:5000 (lab preview may proxy this).
 
-App runs on http://127.0.0.1:5000 (lab preview may proxy this).
+- UI: open / to load index.html.
 
-UI: open / to load index.html.
+- Response format (example):
 
-Response format (example):
-
+```bash
 For the given statement, the system response is 'anger': 0.006, 'disgust': 0.003,
 'fear': 0.009, 'joy': 0.968 and 'sadness': 0.049. The dominant emotion is joy.
-
+```
 ---
 
 ## 🧪 Tests
 
-```bash```
+```bash
 python3 -m unittest test_emotion_detection.py
+```
 
 Expected: all tests pass for dominant emotions:
 
@@ -78,8 +83,9 @@ Expected: all tests pass for dominant emotions:
 
 Blank or whitespace-only input → backend returns all None from the detector and the server responds with:
 
-```Invalid text! Please try again!```
-
+```bash
+Invalid text! Please try again!
+```
 
 If the Watson endpoint returns 400, detector returns the same all-None structure by design.
 
@@ -87,9 +93,9 @@ If the Watson endpoint returns 400, detector returns the same all-None structure
 
 ## 🧹 Static Code Analysis (Pylint)
 
-```bash```
+```bash
 pylint server.py
-
+```
 
 Tips to get 10/10:
 
